@@ -1,16 +1,32 @@
 {
+  "type": "module",
   "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "prettier": {
+    "tabWidth": 4,
+    "useTabs": false,
+    "printWidth": 200,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "semi": false
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
